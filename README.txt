@@ -1,0 +1,2 @@
+作业已提交至详细设计阶段3
+驱动程序、桩程序、MockObject都在项目的框架代码里（SalesSystemClient和SalesSystemServer）

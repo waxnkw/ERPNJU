@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="786.0" prefWidth="1366.0" styleClass="background" stylesheets="@BillStateUi.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.billUi.billStateUi.WareKeeperBillStateUiController">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="786.0" prefWidth="300.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="unPassButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#unpassButtonListener" prefHeight="55.0" prefWidth="160.0" styleClass="buttons" stylesheets="@BillStateUi.css" text="未通过审核">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="toDoButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#toDoButtonListener" prefHeight="55.0" prefWidth="160.0" styleClass="buttons" text="待处理">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="doneButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#doneButtonListener" prefHeight="55.0" prefWidth="160.0" styleClass="buttons" text="已完成">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="100.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <HBox fx:id="billHBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="786.0" prefWidth="1065.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
